@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c54c7e2bea135b94caa2590061e080aa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - FuturaT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d483e8ccd8dde6949941aababb16b19d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

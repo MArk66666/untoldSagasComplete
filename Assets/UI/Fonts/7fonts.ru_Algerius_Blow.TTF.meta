@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1891df1c6d96e9c4aa10965cfc128f46
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - a_AlgeriusBlw
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 67b1568ed38bc2b46919067c2fa9d2b0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
