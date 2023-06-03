@@ -83,6 +83,9 @@ public class SceneComponentsHolder : MonoBehaviour, IBackgroundInteractable
         CheckForDialogue(currentEvent);
         SetBackground(currentEvent.Background);
 
+        if (currentEvent.ChangeMusicStyle)
+            _audioController.SetMusic(currentEvent.MusicStyle);
+
         _audioController.SetAmbience(currentEvent.Ambience);
         _textVisualizer.WriteTitle(currentEvent.Title);
     }

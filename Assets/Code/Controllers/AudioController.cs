@@ -21,6 +21,7 @@ public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInter
 
     [SerializeField] private AudioClip[] defaultStyleSongs;
     [SerializeField] private AudioClip[] fightStyleSongs;
+    [SerializeField] private AudioClip[] dramaticStyleSongs;
 
     private GameEvent.MusicType _currentMusicType = GameEvent.MusicType.Default;
     private Dictionary<GameEvent.MusicType, AudioClip[]> _musicTypeToSongs;
@@ -31,6 +32,7 @@ public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInter
         {
             { GameEvent.MusicType.Default, defaultStyleSongs },
             { GameEvent.MusicType.Fight, fightStyleSongs },
+            { GameEvent.MusicType.Dramatic, dramaticStyleSongs },
         };
 
         StartCoroutine(SwitchTrack());
@@ -40,6 +42,8 @@ public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInter
     {
         if (_currentMusicType != musicType)
         {
+            _currentMusicType = musicType;
+
             AudioClip clip = GetRandomStylyzedClip();
             HandleSongChange(clip);
         }

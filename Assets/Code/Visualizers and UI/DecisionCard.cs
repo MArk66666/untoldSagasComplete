@@ -11,6 +11,7 @@ public class DecisionCard : MonoBehaviour
     [SerializeField] private Text descriptionText;
     [SerializeField] private GameObject frontSide;
     [SerializeField] private Button OnClickButton;
+    [SerializeField] private RequiredCharacteristicSetup requiredCharacteristicIcon;
 
     private int _targetID = 0;
     private AudioSource _source;
@@ -32,6 +33,7 @@ public class DecisionCard : MonoBehaviour
         _source = GetComponent<AudioSource>();
         CardTransformHandler = GetComponent<CardTransformHandler>();
 
+        requiredCharacteristicIcon.SetActive(false);
         StartCoroutine(CardTransformHandler.RotateCard(new Vector3(0f, 0f, 0f)));
     }
 
@@ -79,6 +81,13 @@ public class DecisionCard : MonoBehaviour
     private void SetCharactersRelationModifier(CharacterRelationshipModifier charactersRelationshipModifier)
     {
         _relationshipModifiers = charactersRelationshipModifier.RelationshipModifiers;    
+    }
+
+    private void SetRequiredCharacteristicIcon(Characteristic characteristic)
+    {
+        requiredCharacteristicIcon.SetupCharacteristic(characteristic);
+        requiredCharacteristicIcon.SetActive(true);
+        requiredCharacteristicIcon.VisualizeIcon();
     }
 
     private void SelectCard()
@@ -162,7 +171,7 @@ public class DecisionCard : MonoBehaviour
     {
         _eventsManager.SetChapter(_targetChapter);
     }
-
+                                                                                                           
     public void InitializeCard(Decision decision, EventsManager eventsManager)
     {
         SetValues(decision.Title, decision.Description, decision.TargetEventID);
@@ -177,6 +186,9 @@ public class DecisionCard : MonoBehaviour
 
         if (decision.ChangeRelationship())
             SetCharactersRelationModifier(decision.CharactersRelationshipModifier);
+
+        if (decision.CharacteristicRequirment())
+            SetRequiredCharacteristicIcon(decision.RequiredCharacteristic);
 
         AudioClip defaultClip = _eventsManager.SceneComponents.GetDefaultClickSound();
         AudioClip clip = decision.ClickSound == null ? defaultClip : decision.ClickSound;

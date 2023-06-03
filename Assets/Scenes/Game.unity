@@ -543,7 +543,7 @@ RectTransform:
   m_GameObject: {fileID: 733910449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.80555, y: 0.80555, z: 0.80555}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 385174755}
@@ -551,8 +551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -137.1914, y: -351.68}
-  m_SizeDelta: {x: 316.3625, y: 58.981094}
+  m_AnchoredPosition: {x: -137.54, y: -352.05}
+  m_SizeDelta: {x: 374.7942, y: 58.9811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &733910451
 MonoBehaviour:
@@ -822,8 +822,11 @@ MonoBehaviour:
   ambiencePlayer: {fileID: 479392983}
   defaultStyleSongs:
   - {fileID: 8300000, guid: 7923d4b714fd98d4194be1b30138316e, type: 3}
-  - {fileID: 8300000, guid: 7923d4b714fd98d4194be1b30138316e, type: 3}
+  - {fileID: 8300000, guid: fe2c34373c116e647a6b75c2bf82bdcd, type: 3}
+  - {fileID: 8300000, guid: f8a56644ffdee7642ae3ba42201e3d6b, type: 3}
   fightStyleSongs: []
+  dramaticStyleSongs:
+  - {fileID: 8300000, guid: de42bee88f794454ebd6a198a13000d5, type: 3}
 --- !u!114 &820111059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,8 +960,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -51.215, y: -175}
-  m_SizeDelta: {x: 1436.2, y: 194.97998}
+  m_AnchoredPosition: {x: -52, y: -166}
+  m_SizeDelta: {x: 1398.5967, y: 194.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1026895007
 MonoBehaviour:
@@ -1366,7 +1369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -137.19142, y: -161.18243}
+  m_AnchoredPosition: {x: -138.35, y: -161.18}
   m_SizeDelta: {x: 273.47, y: 322.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960862752

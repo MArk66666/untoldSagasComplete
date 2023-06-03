@@ -23,14 +23,17 @@ public class GameEvent
 
     public AudioClip Ambience = null;
 
-    public MusicType MusicStyle = MusicType.Default;
-
     public Decision[] Decisions;
 
     public bool Dialogue;
 
     [ShowIf("Dialogue")]
     public Character DialogueCharacter;
+
+    public bool ChangeMusicStyle;
+
+    [ShowIf("ChangeMusicStyle")]
+    public MusicType MusicStyle = MusicType.Default;
 
     public enum MusicType
     {

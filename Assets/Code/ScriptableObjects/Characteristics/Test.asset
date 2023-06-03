@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb939d5054e83ec42abe051f8b11e4a2, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  Name: "\u0422\u0435\u0441\u0442\u043E\u0432\u0430\u044F"
-  Icon: {fileID: 21300000, guid: 03c50b44cf969b84ab884fd66bbc0cde, type: 3}
+  Name: "\u0421\u0443\u0447\u0435\u043D\u044B\u0448"
+  Icon: {fileID: 21300000, guid: 064d857345becec469e4ab2b3c8ef28f, type: 3}
