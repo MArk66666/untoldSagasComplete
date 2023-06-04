@@ -31,7 +31,7 @@ public class PlayerStats : MonoBehaviour, ICharacteristicInteractable
 
     public bool CheckForCharacteristic(Characteristic targetCharacteristic)
     {
-        foreach(Characteristic characteristic in _acquiredCharacteristics)
+        foreach (Characteristic characteristic in _acquiredCharacteristics)
         {
             if (characteristic == targetCharacteristic)
                 return true;

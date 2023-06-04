@@ -1,11 +1,26 @@
 using UnityEngine;
 using CustomInspector;
+using Unity.VisualScripting;
 
 [CreateAssetMenu(fileName = "Chapter", menuName = "Custom/New Chapter")]
 
 public class Chapter : ScriptableObject
 {
     [SerializeField] private GameEvent[] events;
+
+    private void OnValidate()
+    {
+        UpdateIdentifiers();
+    }
+
+    private void UpdateIdentifiers()
+    {
+        for (int i = 0; i < events.Length; i++)
+        {
+            GameEvent gameEvent = events[i];
+            gameEvent.AssignEventID(i);
+        }
+    }
 
     public GameEvent GetEvent(int id)
     {
@@ -38,6 +53,13 @@ public class GameEvent
     public enum MusicType
     {
         Default, Fight, Dramatic
+    }
+
+    [SerializeField, ReadOnly] private int _eventID;
+
+    public void AssignEventID(int sequenceNumber)
+    {
+        _eventID = sequenceNumber;
     }
 }
 

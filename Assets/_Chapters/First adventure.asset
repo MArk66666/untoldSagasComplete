@@ -57,6 +57,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 1
     MusicStyle: 0
+    _eventID: 0
   - Title: "\u041D\u0430\u0439\u0434\u044F \u0431\u0440\u0430\u0442\u0430, \u043D\u0430
       \u0435\u0433\u043E \u043B\u0438\u0446\u0435 \u0440\u0430\u0441\u043F\u043B\u044B\u0432\u0435\u0442\u0441\u044F
       \u0437\u043D\u0430\u043A\u043E\u043C\u0430\u044F \u0443\u0445\u043C\u044B\u043B\u043A\u0430,
@@ -89,6 +90,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 1
   - Title: "\u0423\u0432\u0438\u0434\u0435\u0432 \u0432\u0430\u0441, \u0433\u043B\u0430\u0437\u0430
       \u0441\u0435\u0441\u0442\u0440\u044B \u0437\u0430\u0433\u043E\u0440\u0430\u044E\u0442\u0441\u044F,
       \u043E\u043D\u0430 \u0437\u0430\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u0435\u0442
@@ -127,6 +129,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 2
   - Title: "\u0427\u0435\u0440\u0435\u0437 \u043A\u0430\u043A\u043E\u0435-\u0442\u043E
       \u0432\u0440\u0435\u043C\u044F \u0433\u043E\u043B\u043E\u0441 \u0432\u0430\u0448\u0435\u0433\u043E
       \u043E\u0442\u0446\u0430 \u0440\u0430\u0437\u043D\u043E\u0441\u0438\u0442\u0441\u044F
@@ -156,6 +159,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 3
   - Title: "\u0412\u0430\u0448\u0430 \u043C\u0430\u0442\u0443\u0448\u043A\u0430 \u0438
       \u043E\u0442\u0435\u0446 \u0443\u0432\u0438\u0434\u0435\u0432 \u0432\u0430\u0441
       \u0437\u0430\u0443\u043B\u044B\u0431\u0430\u043B\u0438\u0441\u044C, \u043E\u0442\u0435\u0446
@@ -183,6 +187,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 4
   - Title: "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0448\u044C
       \u043B\u0438 \u0442\u044B \u0441\u043E\u0441\u0440\u0435\u0434\u043E\u0442\u043E\u0447\u0438\u0442\u044C\u0441\u044F
       \u043D\u0430 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u0438 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430
@@ -217,6 +222,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: 9143557ef6b3b614e98e0b579810c3f0, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 5
   - Title: "\u0414\u043E\u0441\u043B\u0443\u0448\u0430\u0432 \u043E\u0442\u0446\u0430,
       \u0432\u0430\u0448\u0430 \u043C\u0430\u0442\u0443\u0448\u043A\u0430 \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u043E
       \u0432\u043C\u0435\u0448\u0438\u0432\u0430\u0435\u0442\u0441\u044F, \u0435\u0435
@@ -249,6 +255,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: 9143557ef6b3b614e98e0b579810c3f0, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 6
   - Title: "\u041E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0435
       \u043C\u0435\u043D\u0435\u0435 \u0432\u0430\u0436\u043D\u043E, \u043C\u043E\u0439
       \u0434\u043E\u0440\u043E\u0433\u043E\u0439"
@@ -273,6 +280,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 7
   - Title: "\u0422\u0435\u043F\u0435\u0440\u044C \u0432\u0430\u043C \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u0438\u0442
       \u043F\u0440\u0438\u043D\u044F\u0442\u044C \u0440\u0435\u0448\u0435\u043D\u0438\u0435,
       \u0441\u0442\u0430\u0442\u044C \u043D\u0430 \u043F\u0435\u0440\u0435\u043F\u0443\u0442\u044C\u0435
@@ -323,6 +331,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 8
   - Title: "\u0412\u0430\u0448 \u043E\u0442\u0435\u0446 \u043D\u0430\u0447\u043D\u0435\u0442
       \u043E\u0431\u0443\u0447\u0430\u0442\u044C \u0432\u0430\u0441 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0443
       \u0444\u0435\u0445\u0442\u043E\u0432\u0430\u043D\u0438\u044F. \u0414\u0432\u043E\u0440
@@ -351,6 +360,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 9
   - Title: "\u041E\u0431\u0440\u0430\u0434\u043E\u0432\u0430\u043D\u043D\u0430\u044F
       \u043C\u0430\u0442\u0443\u0448\u043A\u0430 \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0443\u0435\u0442
       \u043F\u0440\u0438\u0435\u0437\u0434 \u043B\u0443\u0447\u0448\u0438\u0445 \u043D\u0430\u0441\u0442\u0430\u0432\u043D\u0438\u043A\u043E\u0432
@@ -380,6 +390,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 10
   - Title: "\u0414\u043D\u0438 \u0441\u043B\u0438\u0432\u0430\u044E\u0442\u0441\u044F
       \u0434\u0440\u0443\u0433 \u0441 \u0434\u0440\u0443\u0433\u043E\u043C, \u043A\u0430\u0436\u0434\u044B\u0439
       \u0434\u0435\u043D\u044C \u0432\u044B \u0441 \u043E\u0442\u0446\u043E\u043C
@@ -409,6 +420,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 11
   - Title: "\u0414\u043D\u0438 \u0441\u043B\u0438\u0432\u0430\u044E\u0442\u0441\u044F
       \u0434\u0440\u0443\u0433 \u0441 \u0434\u0440\u0443\u0433\u043E\u043C, \u043A\u0430\u0436\u0434\u044B\u0439
       \u0434\u0435\u043D\u044C \u0432\u044B \u0443\u0447\u0438\u0442\u0435 \u043C\u043D\u043E\u0433\u043E
@@ -440,6 +452,7 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 12
   - Title: "\u041E\u0431\u044B\u0447\u043D\u043E \u0432\u044B \u0433\u0443\u043B\u044F\u0435\u0435\u0442\u0435
       \u0432\u043E \u0434\u0432\u043E\u0440\u0435 \u0434\u043E\u043C\u0430, \u0438\u0433\u0440\u0430\u044F
       \u0441 \u0431\u0440\u0430\u0442\u043E\u043C \u0438\u043B\u0438 \u0443\u0431\u0435\u0433\u0430\u044F
@@ -467,3 +480,320 @@ MonoBehaviour:
     DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 13
+  - Title: "\u041A\u0430\u043A \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u0430\u0448\u0430
+      \u043D\u043E\u0433\u0430 \u043F\u0435\u0440\u0435\u0441\u0442\u0443\u043F\u0430\u0435\u0442
+      \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u0432\u0430\u0448\u0435\u0433\u043E
+      \u0434\u043E\u043C\u0430, \u0432\u0430\u0441 \u043E\u043A\u0440\u0443\u0436\u0430\u0435\u0442
+      \u044F\u0440\u043A\u0430\u044F \u0441\u0438\u043C\u0444\u043E\u043D\u0438\u044F
+      \u0434\u0435\u0440\u0435\u0432\u0435\u043D\u0441\u043A\u043E\u0439 \u0436\u0438\u0437\u043D\u0438"
+    Background: {fileID: 21300000, guid: 0d75408cd76234c9aa2965447a16440c, type: 3}
+    Ambience: {fileID: 8300000, guid: e71171fe3ed79724ab6fb0c10ce90bd3, type: 3}
+    Decisions:
+    - Title: "\u0418\u0434\u0442\u0438 \u0434\u0430\u043B\u044C\u0448\u0435"
+      Description: "\u0428\u0443\u043C\u044B \u0431\u0443\u0440\u043B\u044F\u0449\u0435\u0439
+        \u0432\u043E\u043A\u0440\u0443\u0433 \u0432\u0430\u0441 \u0436\u0438\u0437\u043D\u0438
+        \u043E\u0447\u0430\u0440\u043E\u0432\u044B\u0432\u0430\u044E\u0442 \u0432\u0430\u0441"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 15
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 32670f77ed9016845bf20242847711ea, type: 2}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 0
+    DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 14
+  - Title: "\u042D\u0442\u0430 \u0434\u0435\u0440\u0435\u0432\u043D\u044F, \u043D\u0430\u0445\u043E\u0434\u044F\u0449\u0430\u044F\u0441\u044F
+      \u043F\u043E\u0434 \u043F\u043E\u043A\u0440\u043E\u0432\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E\u043C
+      \u0432\u0430\u0448\u0435\u0433\u043E \u043E\u0442\u0446\u0430, \u044F\u0432\u043B\u044F\u0435\u0442
+      \u0441\u043E\u0431\u043E\u0439 \u043A\u0430\u0440\u0442\u0438\u043D\u0443 \u0443\u0445\u043E\u0436\u0435\u043D\u043D\u043E\u0433\u043E
+      \u0441\u043F\u043E\u043A\u043E\u0439\u0441\u0442\u0432\u0438\u044F \u0438 \u043A\u0440\u0430\u0441\u043E\u0442\u044B
+      \u0441\u0435\u043B\u044C\u0441\u043A\u043E\u0439 \u0436\u0438\u0437\u043D\u0438"
+    Background: {fileID: 21300000, guid: 0d75408cd76234c9aa2965447a16440c, type: 3}
+    Ambience: {fileID: 8300000, guid: e71171fe3ed79724ab6fb0c10ce90bd3, type: 3}
+    Decisions:
+    - Title: "\u0418\u0434\u0442\u0438 \u0434\u0430\u043B\u044C\u0448\u0435"
+      Description: "\u0412\u044B \u0437\u0430\u043C\u0435\u0447\u0430\u0435\u0442\u0435
+        \u043A\u0430\u043A \u0434\u0435\u0442\u0438 \u0441\u043D\u0443\u044E\u0442
+        \u0442\u0443\u0434\u0430-\u0441\u044E\u0434\u0430 \u0438\u0437 \u0434\u043E\u043C\u043E\u0432"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 16
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 32670f77ed9016845bf20242847711ea, type: 2}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 0
+    DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 15
+  - Title: "\u041F\u043E\u0441\u043B\u0435 \u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0439
+      \u043F\u0440\u043E\u0433\u0443\u043B\u043A\u0438, \u0432\u044B \u0432\u044B\u0445\u043E\u0434\u0438\u0442\u0435
+      \u043A \u0440\u0430\u0437\u0432\u0438\u043B\u043A\u0435. \u041E\u0434\u043D\u0430
+      \u0438\u0437 \u0434\u043E\u0440\u043E\u0433 \u0432\u0435\u0434\u0435\u0442
+      \u043F\u0440\u044F\u043C\u043E, \u0434\u0440\u0443\u0433\u0430\u044F \u0436\u0435 
+      - \u043D\u0430\u043B\u0435\u0432\u043E. \u0412\u043F\u0435\u0440\u0435\u0434\u0438
+      \u0432\u0438\u0434\u043D\u0435\u0435\u0442\u0441\u044F \u0431\u0430\u0448\u043D\u044F"
+    Background: {fileID: 21300000, guid: 722c68c37b8d54995914e40990e0755d, type: 3}
+    Ambience: {fileID: 8300000, guid: e71171fe3ed79724ab6fb0c10ce90bd3, type: 3}
+    Decisions:
+    - Title: "\u0418\u0434\u0442\u0438 \u0432\u043F\u0435\u0440\u0435\u0434"
+      Description: "\u0412\u044B \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0438\u0434\u0442\u0438
+        \u0432 \u0441\u0442\u043E\u0440\u043E\u043D\u0443 \u0431\u0430\u0448\u043D\u0438"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 17
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 32670f77ed9016845bf20242847711ea, type: 2}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    - Title: "\u0418\u0434\u0442\u0438 \u043D\u0430\u043B\u0435\u0432\u043E"
+      Description: "\u0412\u044B \u0440\u0435\u0448\u0430\u0435\u0442\u0435 \u0441\u0432\u0435\u0440\u043D\u0443\u0442\u044C
+        \u043D\u0430 \u0440\u0430\u0437\u0432\u0438\u043B\u043A\u0443, \u0434\u043E\u0440\u043E\u0433\u0430
+        \u0443\u0432\u043E\u0434\u0438\u0442 \u0432\u0430\u0441 \u0432\u0441\u0435
+        \u0434\u0430\u043B\u044C\u0448\u0435 \u0438 \u0434\u0430\u043B\u044C\u0448\u0435
+        \u043E\u0442 \u0431\u0430\u0448\u043D\u0438"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 16
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 32670f77ed9016845bf20242847711ea, type: 2}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 0
+    DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 16
+  - Title: "\u041F\u0440\u0438\u0431\u043B\u0438\u0436\u0430\u044F\u0441\u044C \u043A
+      \u0431\u0430\u0448\u043D\u0435, \u0432\u044B \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435,
+      \u043A\u0430\u043A \u0443\u0441\u0438\u043B\u0438\u0432\u0430\u0435\u0442\u0441\u044F
+      \u0432\u0435\u0442\u0435\u0440, \u0437\u0430\u0441\u0442\u0430\u0432\u043B\u044F\u044F
+      \u0442\u0440\u0435\u043F\u0435\u0442\u0430\u0442\u044C \u0444\u043B\u0430\u0433\u0438,
+      \u043A\u043E\u0442\u043E\u0440\u044B\u043C\u0438 \u0443\u043A\u0440\u0430\u0448\u0435\u043D\u0430
+      \u0431\u0430\u0448\u043D\u044F"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u041F\u043E\u0434\u043E\u0439\u0442\u0438 \u0431\u043B\u0438\u0436\u0435"
+      Description: "\u041D\u0430 \u0444\u043B\u0430\u0433\u0430\u0445 \u0432\u044B
+        \u0441\u0443\u043C\u0435\u043B\u0438 \u0440\u0430\u0437\u0433\u043B\u044F\u0434\u0435\u0442\u044C
+        \u0433\u0435\u0440\u0431\u044B \u0432\u0430\u0448\u0435\u0439 \u0441\u0435\u043C\u044C\u0438
+        \u0438 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0441\u0442\u0432\u0430"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 18
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 0
+    DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 17
+  - Title: "\u0423 \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u0438\u044F \u0431\u0430\u0448\u043D\u0438
+      \u0432\u044B \u0437\u0430\u043C\u0435\u0447\u0430\u0435\u0442\u0435 \u0433\u0440\u043E\u0437\u043D\u0443\u044E
+      \u0434\u0432\u0435\u0440\u044C, \u043A\u043E\u0442\u043E\u0440\u0443\u044E
+      \u043E\u0445\u0440\u0430\u043D\u044F\u044E\u0442 \u0434\u0432\u0430 \u0441\u0442\u0440\u0430\u0436\u043D\u0438\u043A\u0430"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u0420\u0430\u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C \u0441\u0442\u0440\u0430\u0436\u0443"
+      Description: "\u0412\u044B \u043F\u043E\u0434\u0445\u043E\u0434\u0438\u0442\u0435
+        \u043A \u0441\u0442\u0440\u0430\u0436\u043D\u0438\u043A\u0430\u043C, \u0447\u0442\u043E\u0431\u044B
+        \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C \u0438\u0445
+        \u043E \u0431\u0430\u0448\u043D\u0435"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 19
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 0
+    DialogueCharacter: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 18
+  - Title: "\u0414\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C, \u043C\u043E\u043B\u043E\u0434\u043E\u0439
+      \u0433\u043E\u0441\u043F\u043E\u0434\u0438\u043D"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u0421\u043F\u0440\u043E\u0441\u0438\u0442\u044C \u043F\u0440\u043E
+        \u0431\u0430\u0448\u043D\u044E"
+      Description: "\u041B\u044E\u0431\u043E\u043F\u044B\u0442\u0441\u0442\u0432\u043E
+        \u0440\u0430\u0437\u0433\u043E\u0440\u0430\u0435\u0442\u0441\u044F \u0432
+        \u0432\u0430\u0441 \u0438 \u0432\u044B \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u0442\u0435
+        \u043E \u0431\u0430\u0448\u043D\u0435"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 20
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 1
+    DialogueCharacter: {fileID: 11400000, guid: f0f4bfa8b6fce4c718009d6d057ab05b, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 19
+  - Title: "\u042D\u0442\u043E \u043D\u0430\u0448\u0430 \u0441\u0442\u043E\u0440\u043E\u0436\u0435\u0432\u0430\u044F
+      \u0431\u0430\u0448\u043D\u044F, \u044E\u043D\u044B\u0439 \u0433\u043E\u0441\u043F\u043E\u0434\u0438\u043D.
+      \u041E\u043D\u0430 \u0432\u043E\u0437\u0432\u044B\u0448\u0430\u0435\u0442\u0441\u044F,
+      \u0447\u0442\u043E\u0431\u044B \u0441\u043B\u0435\u0434\u0438\u0442\u044C \u0437\u0430
+      \u0432\u0441\u0435\u043C, \u0447\u0442\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442
+      \u0432\u043E\u043A\u0440\u0443\u0433"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u041F\u043E\u043D\u044F\u0442\u043D\u043E"
+      Description: "\u0412\u044B \u043D\u0430\u043F\u0440\u0430\u0432\u0438\u043B\u0438\u0441\u044C
+        \u0434\u0430\u043B\u044C\u0448\u0435"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 24
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    - Title: "\u0418 \u044D\u0442\u043E \u0432\u0441\u0435?"
+      Description: "\u0412 \u043E\u0442\u0432\u0435\u0442 \u043D\u0430 \u0432\u0430\u0448
+        \u0432\u043E\u043F\u0440\u043E\u0441, \u0441\u0442\u0440\u0430\u0436\u043D\u0438\u043A
+        \u0443\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u043D\u0430 \u0434\u0432\u0435\u0440\u044C
+        \u0443 \u043F\u043E\u0434\u043D\u043E\u0436\u044C\u044F \u0431\u0430\u0448\u043D\u0438"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 00000000
+      Interactions: 
+      TargetEventID: 21
+      RequiredCharacteristic: {fileID: 11400000, guid: c7a010f9d9499bb45b95bc4a97ff0cb1, type: 2}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 1
+    DialogueCharacter: {fileID: 11400000, guid: f0f4bfa8b6fce4c718009d6d057ab05b, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 20
+  - Title: "\u0417\u0430 \u044D\u0442\u043E\u0439 \u0434\u0432\u0435\u0440\u044C\u044E
+      - \u0441\u0435\u0442\u044C \u043F\u043E\u0434\u0437\u0435\u043C\u043D\u044B\u0445
+      \u0442\u0443\u043D\u043D\u0435\u043B\u0435\u0439, \u043F\u0440\u043E\u0442\u044F\u043D\u0443\u0432\u0448\u0438\u0445\u0441\u044F
+      \u043F\u043E\u0434 \u0432\u0441\u0435\u0439 \u0434\u0435\u0440\u0435\u0432\u043D\u0435\u0439"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u0417\u0430\u0447\u0435\u043C \u043E\u043D\u0438 \u043D\u0443\u0436\u043D\u044B?"
+      Description: "\u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A \u043F\u0440\u0438\u043E\u0442\u043A\u0440\u044B\u0432\u0435\u0442
+        \u0434\u0432\u0435\u0440\u044C \u0438 \u0432\u044B \u043C\u0435\u043B\u044C\u043A\u043E\u043C
+        \u0432\u0438\u0434\u0438\u0442\u0435 \u0441\u043F\u0443\u0441\u043A \u0432\u043D\u0438\u0437"
+      ClickSound: {fileID: 8300000, guid: ebd3480548e04e74cab96d1f333beca1, type: 3}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 22
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 1
+    DialogueCharacter: {fileID: 11400000, guid: f0f4bfa8b6fce4c718009d6d057ab05b, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 21
+  - Title: "\u041E\u043D\u0438 \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u044B
+      \u0434\u043B\u044F \u044D\u043A\u0441\u0442\u0440\u0435\u043D\u043D\u043E\u0433\u043E
+      \u0431\u0435\u0433\u0441\u0442\u0432\u0430, \u0432\u043D\u0435\u0437\u0430\u043F\u043D\u043E\u0433\u043E
+      \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u044F \u0438\u043B\u0438 \u043F\u0440\u043E\u0441\u0442\u043E
+      \u0434\u043B\u044F \u043D\u0435\u0437\u0430\u043C\u0435\u0442\u043D\u043E\u0433\u043E
+      \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u041F\u043E\u043D\u044F\u0442\u043D\u043E"
+      Description: "\u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A \u0443\u0432\u043B\u0435\u0447\u0435\u043D\u043D\u043E
+        \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0435\u0442 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 
+      TargetEventID: 23
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 0}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 1
+    DialogueCharacter: {fileID: 11400000, guid: f0f4bfa8b6fce4c718009d6d057ab05b, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 22
+  - Title: "\u0413\u0435\u043D\u0438\u0430\u043B\u044C\u043D\u043E, \u043D\u0435
+      \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0435?"
+    Background: {fileID: 21300000, guid: b9583bd622b2f4ebc870ecad430e1aba, type: 3}
+    Ambience: {fileID: 8300000, guid: af36de21b4bad4d98bb976fd8ab3dd45, type: 3}
+    Decisions:
+    - Title: "\u0410 \u0442\u043E!"
+      Description: "\u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A \u0437\u0430\u0443\u043B\u044B\u0431\u0430\u043B\u0441\u044F,
+        \u0432\u044B \u043F\u043E\u043F\u0440\u043E\u0449\u0430\u043B\u0438\u0441\u044C
+        \u0438 \u043F\u043E\u0448\u043B\u0438 \u0434\u0430\u043B\u044C\u0448\u0435"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 02000000
+      TargetEventID: 24
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 91e8c6b76977f4fcf85452ddb781959f, type: 2}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    - Title: "\u041D\u0435 \u043E\u0447\u0435\u043D\u044C"
+      Description: "\u0421\u0442\u0440\u0430\u0436\u043D\u0438\u043A \u0444\u044B\u0440\u043A\u043D\u0443\u043B,
+        \u0432\u044B \u043F\u043E\u043F\u0440\u043E\u0449\u0430\u043B\u0438\u0441\u044C
+        \u0438 \u043F\u043E\u0448\u043B\u0438 \u0434\u0430\u043B\u044C\u0448\u0435"
+      ClickSound: {fileID: 0}
+      Image: {fileID: 0}
+      Requirments: 
+      Interactions: 02000000
+      TargetEventID: 24
+      RequiredCharacteristic: {fileID: 0}
+      TargetChapter: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 91e8c6b76977f4fcf85452ddb781959f, type: 2}
+      CharactersRelationshipModifier:
+        RelationshipModifiers: []
+    Dialogue: 1
+    DialogueCharacter: {fileID: 11400000, guid: f0f4bfa8b6fce4c718009d6d057ab05b, type: 2}
+    ChangeMusicStyle: 0
+    MusicStyle: 0
+    _eventID: 23
