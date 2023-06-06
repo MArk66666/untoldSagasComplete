@@ -356,7 +356,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -824,7 +824,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7923d4b714fd98d4194be1b30138316e, type: 3}
   - {fileID: 8300000, guid: fe2c34373c116e647a6b75c2bf82bdcd, type: 3}
   - {fileID: 8300000, guid: f8a56644ffdee7642ae3ba42201e3d6b, type: 3}
-  fightStyleSongs: []
+  fightStyleSongs:
+  - {fileID: 8300000, guid: baaae28711ac743e39065149b521f742, type: 3}
   dramaticStyleSongs:
   - {fileID: 8300000, guid: de42bee88f794454ebd6a198a13000d5, type: 3}
 --- !u!114 &820111059
@@ -1277,10 +1278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
