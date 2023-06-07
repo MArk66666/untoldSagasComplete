@@ -11,7 +11,8 @@ public class DecisionCard : MonoBehaviour
     [SerializeField] private Text descriptionText;
     [SerializeField] private GameObject frontSide;
     [SerializeField] private Button OnClickButton;
-    [SerializeField] private RequiredCharacteristicSetup requiredCharacteristicIcon;
+    [SerializeField] private RequiredCharacteristicSetup requiredCharacteristic;
+    [SerializeField] private Image requiredItemIcon;
 
     private int _targetID = 0;
     private AudioSource _source;
@@ -19,6 +20,8 @@ public class DecisionCard : MonoBehaviour
     private Chapter _targetChapter;
     private Characteristic _addableCharacteristic;
     private CharacterRelationshipModifier.RelationshipModifier[] _relationshipModifiers;
+    private Item _addableItem;
+    private Item _removableItem;
 
     private EventsManager _eventsManager;
     private PlayerStats _playerStats;
@@ -33,7 +36,7 @@ public class DecisionCard : MonoBehaviour
         _source = GetComponent<AudioSource>();
         CardTransformHandler = GetComponent<CardTransformHandler>();
 
-        requiredCharacteristicIcon.SetActive(false);
+        requiredCharacteristic.SetActive(false);
         StartCoroutine(CardTransformHandler.RotateCard(new Vector3(0f, 0f, 0f)));
     }
 
@@ -78,16 +81,31 @@ public class DecisionCard : MonoBehaviour
         _addableCharacteristic = characteristic;
     }
 
+    private void SetItemToAdd(Item item)
+    {
+        _addableItem = item;
+    }
+
+    private void SetItemToRemove(Item item)
+    {
+        _removableItem = item;
+    }
+
     private void SetCharactersRelationModifier(CharacterRelationshipModifier charactersRelationshipModifier)
     {
         _relationshipModifiers = charactersRelationshipModifier.RelationshipModifiers;    
     }
 
-    private void SetRequiredCharacteristicIcon(Characteristic characteristic)
+    private void SetRequiredCharacteristic(Characteristic characteristic)
     {
-        requiredCharacteristicIcon.SetupCharacteristic(characteristic);
-        requiredCharacteristicIcon.SetActive(true);
-        requiredCharacteristicIcon.VisualizeIcon();
+        requiredCharacteristic.SetupCharacteristic(characteristic);
+        requiredCharacteristic.SetActive(true);
+        requiredCharacteristic.VisualizeIcon();
+    }
+
+    private void SetRequiredItem(Item item)
+    {
+        requiredItemIcon.sprite = item.Icon;
     }
 
     private void SelectCard()
@@ -136,6 +154,12 @@ public class DecisionCard : MonoBehaviour
                 case Decision.Interaction.ChangeRelationship:
                     ChangeRelationship();
                     break;
+                case Decision.Interaction.AddItem:
+                    _playerStats.ItemHandler.AddItem(_addableItem);
+                    break;
+                case Decision.Interaction.RemoveItem:
+                    _playerStats.ItemHandler.RemoveItem(_removableItem);
+                    break;
                 case Decision.Interaction.PlayChapter:
                     EditChapter();
                     break;
@@ -161,6 +185,30 @@ public class DecisionCard : MonoBehaviour
         _targetID = 0;
     }
 
+    private void CheckForAdditionalModifiers(Decision decision)
+    {
+        if (decision.ChangeChapter())
+            SetTargetChapter(decision.TargetChapter);
+
+        if (decision.AddCharacteristic())
+            SetCharacteristicToAdd(decision.AddableCharacteristic);
+
+        if (decision.ChangeRelationship())
+            SetCharactersRelationModifier(decision.CharactersRelationshipModifier);
+
+        if (decision.CharacteristicRequirment())
+            SetRequiredCharacteristic(decision.RequiredCharacteristic);
+
+        if (decision.ItemRequirment())
+            SetRequiredItem(decision.RequiredItem);
+
+        if (decision.AddItem())
+            SetItemToAdd(decision.AddableItem);
+
+        if (decision.RemoveItem())
+            SetItemToRemove(decision.RemovableItem);
+    }
+
     public void PlayEvent()
     {
         _eventsManager.SetEventID(_targetID);
@@ -177,18 +225,7 @@ public class DecisionCard : MonoBehaviour
         SetValues(decision.Title, decision.Description, decision.TargetEventID);
         SetEventsManager(eventsManager);
         SetConditions(decision.Interactions);
-
-        if (decision.ChangeChapter())
-            SetTargetChapter(decision.TargetChapter);
-
-        if (decision.AddCharacteristic())
-            SetCharacteristicToAdd(decision.AddableCharacteristic);
-
-        if (decision.ChangeRelationship())
-            SetCharactersRelationModifier(decision.CharactersRelationshipModifier);
-
-        if (decision.CharacteristicRequirment())
-            SetRequiredCharacteristicIcon(decision.RequiredCharacteristic);
+        CheckForAdditionalModifiers(decision);
 
         AudioClip defaultClip = _eventsManager.SceneComponents.GetDefaultClickSound();
         AudioClip clip = decision.ClickSound == null ? defaultClip : decision.ClickSound;

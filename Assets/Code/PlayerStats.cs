@@ -2,23 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICharacteristicInteractable
-{
-    void AddCharacteristic(Characteristic characteristic);
-    bool CheckForCharacteristic(Characteristic characteristic);
-}
-
 [RequireComponent(typeof(CharacteristicSetup))]
-public class PlayerStats : MonoBehaviour, ICharacteristicInteractable
+[RequireComponent(typeof(ItemHandler))]
+public class PlayerStats : MonoBehaviour
 {
     private int _heartsAmount = 3;
-    private List<Characteristic> _acquiredCharacteristics = new List<Characteristic>();
 
+    private List<Characteristic> _acquiredCharacteristics = new List<Characteristic>();
     private CharacteristicSetup _characteristicSetup;
+
+    public ItemHandler ItemHandler { get; private set; }
 
     private void Start()
     {
         _characteristicSetup = GetComponent<CharacteristicSetup>();
+        ItemHandler = GetComponent<ItemHandler>();
     }
 
     public void AddCharacteristic(Characteristic characteristic)

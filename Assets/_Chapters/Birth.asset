@@ -32,6 +32,8 @@ MonoBehaviour:
       RequiredCharacteristic: {fileID: 0}
       TargetChapter: {fileID: 0}
       AddableCharacteristic: {fileID: 11400000, guid: e47140be2c365f440a86a6231d36c7c5, type: 2}
+      AddableItem: {fileID: 0}
+      RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
     - Title: "\u041C\u043E\u043B\u0447\u0430\u0442\u044C"
@@ -44,12 +46,15 @@ MonoBehaviour:
       RequiredCharacteristic: {fileID: 0}
       TargetChapter: {fileID: 0}
       AddableCharacteristic: {fileID: 0}
+      AddableItem: {fileID: 11400000, guid: e2a7d3ad2be464866a5b4bc430796c08, type: 2}
+      RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
     Dialogue: 0
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 1
     MusicStyle: 0
+    _eventID: 0
   - Title: "\u0412\u044B \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0442\u0435
       \u0433\u0440\u0443\u0431\u0443\u044E \u0442\u0435\u043A\u0441\u0442\u0443\u0440\u0443
       \u043D\u0430\u0431\u0438\u0442\u043E\u0433\u043E \u0441\u043E\u043B\u043E\u043C\u043E\u0439
@@ -76,12 +81,15 @@ MonoBehaviour:
       RequiredCharacteristic: {fileID: 11400000, guid: e47140be2c365f440a86a6231d36c7c5, type: 2}
       TargetChapter: {fileID: 0}
       AddableCharacteristic: {fileID: 0}
+      AddableItem: {fileID: 11400000, guid: e2a7d3ad2be464866a5b4bc430796c08, type: 2}
+      RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
     Dialogue: 0
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 1
   - Title: "\u0412 \u044D\u0442\u0438 \u043F\u0435\u0440\u0432\u044B\u0435 \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u0438\u044F
       \u0436\u0438\u0437\u043D\u0438 \u0432\u044B \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435\u0441\u044C
       \u043D\u043E\u0432\u044B\u043C \u0447\u043B\u0435\u043D\u043E\u043C \u043C\u0438\u0440\u0430,
@@ -107,9 +115,12 @@ MonoBehaviour:
       RequiredCharacteristic: {fileID: 0}
       TargetChapter: {fileID: 11400000, guid: deb1e4f6ab5d4ce438d7e2779b1280d8, type: 2}
       AddableCharacteristic: {fileID: 0}
+      AddableItem: {fileID: 11400000, guid: cc797a005f8e74e3aa54891c88abd5f8, type: 2}
+      RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
     Dialogue: 0
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 0
     MusicStyle: 0
+    _eventID: 2

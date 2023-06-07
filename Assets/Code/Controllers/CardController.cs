@@ -18,12 +18,22 @@ public class CardController : MonoBehaviour
 
     private bool ConditionsMet(Decision decision)
     {
+        bool conditionsMet = true;
+
         if (decision.CharacteristicRequirment())
         {
-            return _eventsManager.PlayerStats.CheckForCharacteristic(decision.RequiredCharacteristic);
+            conditionsMet = _eventsManager.PlayerStats.CheckForCharacteristic(decision.RequiredCharacteristic);
+            if (!conditionsMet) return false;
         }
 
-        return true;
+
+        if (decision.ItemRequirment())
+        {
+            conditionsMet = _eventsManager.PlayerStats.ItemHandler.CheckForItem(decision.RequiredItem);
+            if (!conditionsMet) return false;
+        }
+
+        return conditionsMet;
     }
 
     public void ClearCards()

@@ -19,7 +19,7 @@ public class RequiredCharacteristicSetup : MonoBehaviour
     {
         float initialDissolveLevel = 1f;
         float dissolveTime = 0f;
-        float dissolveSpeed = 1f;
+        float dissolveSpeed = .5f;
 
         while (dissolveTime < 1f)
         {

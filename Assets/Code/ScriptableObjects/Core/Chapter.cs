@@ -82,9 +82,12 @@ public class Decision
     public int TargetEventID;
 
     [ShowIf("CharacteristicRequirment")] public Characteristic RequiredCharacteristic;
+    [ShowIf("ItemRequirment")] public Item RequiredItem;
 
     [ShowIf("ChangeChapter")] public Chapter TargetChapter;
     [ShowIf("AddCharacteristic")] public Characteristic AddableCharacteristic;
+    [ShowIf("AddItem")] public Item AddableItem;
+    [ShowIf("RemoveItem")] public Item RemovableItem;
     [ShowIf("ChangeRelationship")] public CharacterRelationshipModifier CharactersRelationshipModifier;
 
     public enum Interaction
@@ -99,9 +102,18 @@ public class Decision
 
     public bool CharacteristicRequirment()
     {
-        for(int i = 0; i < Requirments.Length; i++)
+        for (int i = 0; i < Requirments.Length; i++)
         {
             if (Requirments[i] == Requirment.CharacteristicRequirment)
+                return true;
+        }
+        return false;
+    }
+    public bool ItemRequirment()
+    {
+        for (int i = 0; i < Requirments.Length; i++)
+        {
+            if (Requirments[i] == Requirment.ItemRequirment)
                 return true;
         }
         return false;
@@ -121,6 +133,26 @@ public class Decision
         for (int i = 0; i < Interactions.Length; i++)
         {
             if (Interactions[i] == Interaction.AddCharacteristic)
+                return true;
+        }
+
+        return false;
+    }
+    public bool AddItem()
+    {
+        for (int i = 0; i < Interactions.Length; i++)
+        {
+            if (Interactions[i] == Interaction.AddItem)
+                return true;
+        }
+
+        return false;
+    }
+    public bool RemoveItem()
+    {
+        for (int i = 0; i < Interactions.Length; i++)
+        {
+            if (Interactions[i] == Interaction.RemoveItem)
                 return true;
         }
 
