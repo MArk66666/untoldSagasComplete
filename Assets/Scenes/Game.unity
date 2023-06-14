@@ -901,10 +901,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7923d4b714fd98d4194be1b30138316e, type: 3}
   - {fileID: 8300000, guid: fe2c34373c116e647a6b75c2bf82bdcd, type: 3}
   - {fileID: 8300000, guid: f8a56644ffdee7642ae3ba42201e3d6b, type: 3}
-  fightStyleSongs:
-  - {fileID: 8300000, guid: baaae28711ac743e39065149b521f742, type: 3}
+  - {fileID: 8300000, guid: 36e4ea6662e934ffc92551679ffbfd41, type: 3}
+  adventureStyleSongs: []
   dramaticStyleSongs:
   - {fileID: 8300000, guid: de42bee88f794454ebd6a198a13000d5, type: 3}
+  - {fileID: 8300000, guid: baaae28711ac743e39065149b521f742, type: 3}
 --- !u!114 &820111059
 MonoBehaviour:
   m_ObjectHideFlags: 0

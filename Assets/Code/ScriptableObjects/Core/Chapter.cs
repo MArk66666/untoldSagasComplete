@@ -52,7 +52,7 @@ public class GameEvent
 
     public enum MusicType
     {
-        Default, Fight, Dramatic
+        Default, Adventure, Dramatic
     }
 
     [SerializeField, ReadOnly] private int _eventID;
@@ -80,6 +80,8 @@ public class Decision
     public Interaction[] Interactions;
 
     public int TargetEventID;
+
+    public bool Played { get; set; }
 
     [ShowIf("CharacteristicRequirment")] public Characteristic RequiredCharacteristic;
     [ShowIf("ItemRequirment")] public Item RequiredItem;

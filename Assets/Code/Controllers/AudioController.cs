@@ -20,7 +20,7 @@ public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInter
     [SerializeField] private AudioSource ambiencePlayer;
 
     [SerializeField] private AudioClip[] defaultStyleSongs;
-    [SerializeField] private AudioClip[] fightStyleSongs;
+    [SerializeField] private AudioClip[] adventureStyleSongs;
     [SerializeField] private AudioClip[] dramaticStyleSongs;
 
     private GameEvent.MusicType _currentMusicType = GameEvent.MusicType.Default;
@@ -31,7 +31,7 @@ public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInter
         _musicTypeToSongs = new Dictionary<GameEvent.MusicType, AudioClip[]>
         {
             { GameEvent.MusicType.Default, defaultStyleSongs },
-            { GameEvent.MusicType.Fight, fightStyleSongs },
+            { GameEvent.MusicType.Adventure, adventureStyleSongs },
             { GameEvent.MusicType.Dramatic, dramaticStyleSongs },
         };
 

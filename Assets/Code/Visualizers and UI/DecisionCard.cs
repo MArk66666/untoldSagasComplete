@@ -37,6 +37,7 @@ public class DecisionCard : MonoBehaviour
         CardTransformHandler = GetComponent<CardTransformHandler>();
 
         requiredCharacteristic.SetActive(false);
+        requiredItemIcon.gameObject.SetActive(false);
         StartCoroutine(CardTransformHandler.RotateCard(new Vector3(0f, 0f, 0f)));
     }
 
@@ -105,6 +106,7 @@ public class DecisionCard : MonoBehaviour
 
     private void SetRequiredItem(Item item)
     {
+        requiredItemIcon.gameObject.SetActive(true);
         requiredItemIcon.sprite = item.Icon;
     }
 
