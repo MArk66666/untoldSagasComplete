@@ -152,6 +152,7 @@ public class DecisionCard : MonoBehaviour
                     break;
                 case Decision.Interaction.AddCharacteristic:
                     _playerStats.AddCharacteristic(_addableCharacteristic);
+                    VisualizeAddableCharacteristic(_addableCharacteristic);
                     break;
                 case Decision.Interaction.ChangeRelationship:
                     ChangeRelationship();
@@ -169,6 +170,17 @@ public class DecisionCard : MonoBehaviour
         }
     }
 
+    private void VisualizeAddableCharacteristic(Characteristic characteristic)
+    {
+        SecondaryEventsVisualizer secondaryEventsVisualizer = _eventsManager.SecondaryEventsVisualizer;
+        CharacteristicInteractionSetup prefab = secondaryEventsVisualizer.CharacteristicInteractionPrefab;
+        SecondaryEvent secondaryEvent = secondaryEventsVisualizer.InstantiateEvent(prefab);
+        CharacteristicInteractionSetup characteristicInteraction = secondaryEvent as CharacteristicInteractionSetup;
+
+        characteristicInteraction.SetCharacteristic(characteristic);
+        secondaryEventsVisualizer.VisualizeInteraction(secondaryEvent);
+    }
+
     private void ChangeRelationship()
     {
         if (_relationshipModifiers.Length <= 0) return;
@@ -177,6 +189,15 @@ public class DecisionCard : MonoBehaviour
         {
             Character targetCharacter = _relationshipModifiers[i].Character;
             int amount = _relationshipModifiers[i].Relationship;
+
+            SecondaryEventsVisualizer secondaryEventsVisualizer = _eventsManager.SecondaryEventsVisualizer;
+            RelationshipInteractionSetup prefab = secondaryEventsVisualizer.RelationshipInteractionPrefab;
+            SecondaryEvent secondaryEvent = secondaryEventsVisualizer.InstantiateEvent(prefab);
+            RelationshipInteractionSetup relationshipInteraction = secondaryEvent as RelationshipInteractionSetup;
+
+            relationshipInteraction.SetCharacter(targetCharacter);
+            relationshipInteraction.SetTargetValue(targetCharacter.Relationship + amount);
+            secondaryEventsVisualizer.VisualizeInteraction(secondaryEvent);       
 
             _playerStats.ChangeRelationship(targetCharacter, amount);
         }

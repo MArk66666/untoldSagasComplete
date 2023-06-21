@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(SceneComponentsHolder))]
 [RequireComponent(typeof(CardController))]
 [RequireComponent(typeof(PlayerStats))]
+[RequireComponent(typeof(SecondaryEventsVisualizer))]
 public class EventsManager : MonoBehaviour
 {
     [SerializeField] private Chapter initialChapter;
@@ -15,6 +16,7 @@ public class EventsManager : MonoBehaviour
     public SceneComponentsHolder SceneComponents { get; private set; }
     public CardController CardController { get; private set; }
     public PlayerStats PlayerStats { get; private set; }
+    public SecondaryEventsVisualizer SecondaryEventsVisualizer { get; set; }
 
     private void Start()
     {
@@ -23,6 +25,7 @@ public class EventsManager : MonoBehaviour
         SceneComponents = GetComponent<SceneComponentsHolder>();
         CardController = GetComponent<CardController>();
         PlayerStats = GetComponent<PlayerStats>();
+        SecondaryEventsVisualizer = GetComponent<SecondaryEventsVisualizer>();
 
         PlayEvent();
     }
@@ -30,6 +33,13 @@ public class EventsManager : MonoBehaviour
     public void PlayEvent()
     {
         CardController.ClearCards();
+
+        if (SecondaryEventsVisualizer.HasInteractionsToVisualize())
+        {
+            SecondaryEventsVisualizer.VisualizeAll();
+            return;
+        }
+
         CardController.SpawnCards(_currentEventID);
         SceneComponents.SetUpScene(_currentEventID);
     }

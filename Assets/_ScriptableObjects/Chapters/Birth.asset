@@ -30,6 +30,7 @@ MonoBehaviour:
       Interactions: 
       TargetEventID: 1
       RequiredCharacteristic: {fileID: 0}
+      RequiredItem: {fileID: 0}
       TargetChapter: {fileID: 0}
       AddableCharacteristic: {fileID: 11400000, guid: e47140be2c365f440a86a6231d36c7c5, type: 2}
       AddableItem: {fileID: 0}
@@ -44,12 +45,15 @@ MonoBehaviour:
       Interactions: 
       TargetEventID: 1
       RequiredCharacteristic: {fileID: 0}
+      RequiredItem: {fileID: 0}
       TargetChapter: {fileID: 0}
-      AddableCharacteristic: {fileID: 0}
+      AddableCharacteristic: {fileID: 11400000, guid: 32670f77ed9016845bf20242847711ea, type: 2}
       AddableItem: {fileID: 11400000, guid: e2a7d3ad2be464866a5b4bc430796c08, type: 2}
       RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
-        RelationshipModifiers: []
+        RelationshipModifiers:
+        - Character: {fileID: 11400000, guid: 14e1dfd64b2cda44eb702aa3072e7139, type: 2}
+          Relationship: 9
     Dialogue: 0
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 1
@@ -79,6 +83,7 @@ MonoBehaviour:
       Interactions: 
       TargetEventID: 2
       RequiredCharacteristic: {fileID: 11400000, guid: e47140be2c365f440a86a6231d36c7c5, type: 2}
+      RequiredItem: {fileID: 0}
       TargetChapter: {fileID: 0}
       AddableCharacteristic: {fileID: 0}
       AddableItem: {fileID: 11400000, guid: e2a7d3ad2be464866a5b4bc430796c08, type: 2}
@@ -113,6 +118,7 @@ MonoBehaviour:
       Interactions: 06000000
       TargetEventID: 3
       RequiredCharacteristic: {fileID: 0}
+      RequiredItem: {fileID: 0}
       TargetChapter: {fileID: 11400000, guid: deb1e4f6ab5d4ce438d7e2779b1280d8, type: 2}
       AddableCharacteristic: {fileID: 0}
       AddableItem: {fileID: 11400000, guid: cc797a005f8e74e3aa54891c88abd5f8, type: 2}

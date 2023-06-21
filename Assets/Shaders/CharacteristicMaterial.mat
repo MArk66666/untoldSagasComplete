@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UIMaterial
+  m_Name: CharacteristicMaterial
   m_Shader: {fileID: 4800000, guid: d862f80278e743a4f95721f29d560a4a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -100,7 +100,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Level: 1
+    - _Level: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
