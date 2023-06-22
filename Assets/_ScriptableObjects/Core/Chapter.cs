@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 public class Chapter : ScriptableObject
 {
-    [SerializeField] private GameEvent[] events;
+    public GameEvent[] events;
 
     private void OnValidate()
     {
@@ -60,6 +60,11 @@ public class GameEvent
     public void AssignEventID(int sequenceNumber)
     {
         _eventID = sequenceNumber;
+    }
+
+    public int GetEventID()
+    {
+        return _eventID;
     }
 }
 

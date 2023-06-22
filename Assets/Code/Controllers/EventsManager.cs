@@ -9,6 +9,7 @@ using UnityEngine;
 public class EventsManager : MonoBehaviour
 {
     [SerializeField] private Chapter initialChapter;
+    [SerializeField] private LocalizationManager localizationManager;
 
     private int _currentEventID = 0;
     private Chapter _currentChapter;
@@ -17,6 +18,7 @@ public class EventsManager : MonoBehaviour
     public CardController CardController { get; private set; }
     public PlayerStats PlayerStats { get; private set; }
     public SecondaryEventsVisualizer SecondaryEventsVisualizer { get; set; }
+    public LocalizationManager LocalizationManager { get => localizationManager; }
 
     private void Start()
     {

@@ -75,6 +75,13 @@ public class SceneComponentsHolder : MonoBehaviour, IBackgroundInteractable
         _dialogueManager.ToggleDialogueVisibility(currentEvent.Dialogue);
     }
 
+    private string GetLocalizedText(Chapter chapter, int currentEventID)
+    {
+        string key = "chapter_" + chapter.name + "_event_" + currentEventID + "_title";
+        string localizedText = _eventsManager.LocalizationManager.GetTranslation(key);
+        return localizedText;
+    }
+
     public void SetUpScene(int currentEventID)
     {
         Chapter currentChapter = _eventsManager.GetCurrentChapter();
