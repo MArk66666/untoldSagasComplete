@@ -99,7 +99,7 @@ public class Decision
 
     public enum Interaction
     {
-        AddHeart, RemoveHeart, AddCharacteristic, ChangeRelationship, AddItem, RemoveItem, PlayChapter
+        AddHeart, RemoveHeart, AddCharacteristic, ChangeRelationship, AddItem, RemoveItem, PlayChapter, SaveGameData
     }
 
     public enum Requirment

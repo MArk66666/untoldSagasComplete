@@ -19,12 +19,16 @@ public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInter
     [SerializeField] private AudioSource musicPlayer;
     [SerializeField] private AudioSource ambiencePlayer;
 
+    [SerializeField] private AudioClip defaultClickSound;
+
     [SerializeField] private AudioClip[] defaultStyleSongs;
     [SerializeField] private AudioClip[] adventureStyleSongs;
     [SerializeField] private AudioClip[] dramaticStyleSongs;
 
     private GameEvent.MusicType _currentMusicType = GameEvent.MusicType.Default;
     private Dictionary<GameEvent.MusicType, AudioClip[]> _musicTypeToSongs;
+
+    public AudioClip DefaultClickSound { get => defaultClickSound; }
 
     private void Awake()
     {

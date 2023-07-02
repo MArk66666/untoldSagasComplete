@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacteristicSetup))]
 [RequireComponent(typeof(ItemHandler))]
-[RequireComponent(typeof(CharacterController))]
-public class PlayerStats : MonoBehaviour
+[RequireComponent(typeof(CharactersContainer))]
+public class PlayerStats : MonoBehaviour, IDataPersistence
 {
     private int _heartsAmount = 3;
 
@@ -22,6 +21,15 @@ public class PlayerStats : MonoBehaviour
         CharactersContainer = GetComponent<CharactersContainer>();
 
         CharactersContainer.ResetCharactersRelationships();
+    }
+    public void LoadData(GameData data)
+    {
+        _heartsAmount = data.HeartsAmount;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.HeartsAmount = _heartsAmount;
     }
 
     public void AddCharacteristic(Characteristic characteristic)

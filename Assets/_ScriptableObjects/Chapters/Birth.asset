@@ -53,7 +53,7 @@ MonoBehaviour:
       CharactersRelationshipModifier:
         RelationshipModifiers:
         - Character: {fileID: 11400000, guid: 14e1dfd64b2cda44eb702aa3072e7139, type: 2}
-          Relationship: 9
+          Relationship: -5
     Dialogue: 0
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 1

@@ -25,6 +25,7 @@ public class DecisionCard : MonoBehaviour
 
     private EventsManager _eventsManager;
     private PlayerStats _playerStats;
+    private SecondaryEventsVisualizer _secondaryEventsVisualizer;
 
     public CardTransformHandler CardTransformHandler { get; private set; }
     public bool ChangeChapter { get; private set; }
@@ -75,6 +76,7 @@ public class DecisionCard : MonoBehaviour
     {
         _eventsManager = eventsManager;
         _playerStats = _eventsManager.PlayerStats;
+        _secondaryEventsVisualizer = _eventsManager.SecondaryEventsVisualizer;
     }
 
     private void SetCharacteristicToAdd(Characteristic characteristic)
@@ -172,13 +174,12 @@ public class DecisionCard : MonoBehaviour
 
     private void VisualizeAddableCharacteristic(Characteristic characteristic)
     {
-        SecondaryEventsVisualizer secondaryEventsVisualizer = _eventsManager.SecondaryEventsVisualizer;
-        CharacteristicInteractionSetup prefab = secondaryEventsVisualizer.CharacteristicInteractionPrefab;
-        SecondaryEvent secondaryEvent = secondaryEventsVisualizer.InstantiateEvent(prefab);
+        CharacteristicInteractionSetup prefab = _secondaryEventsVisualizer.CharacteristicInteractionPrefab;
+        SecondaryEvent secondaryEvent = _secondaryEventsVisualizer.InstantiateEvent(prefab);
         CharacteristicInteractionSetup characteristicInteraction = secondaryEvent as CharacteristicInteractionSetup;
 
         characteristicInteraction.SetCharacteristic(characteristic);
-        secondaryEventsVisualizer.VisualizeInteraction(secondaryEvent);
+        _secondaryEventsVisualizer.VisualizeInteraction(secondaryEvent);
     }
 
     private void ChangeRelationship()
@@ -190,14 +191,13 @@ public class DecisionCard : MonoBehaviour
             Character targetCharacter = _relationshipModifiers[i].Character;
             int amount = _relationshipModifiers[i].Relationship;
 
-            SecondaryEventsVisualizer secondaryEventsVisualizer = _eventsManager.SecondaryEventsVisualizer;
-            RelationshipInteractionSetup prefab = secondaryEventsVisualizer.RelationshipInteractionPrefab;
-            SecondaryEvent secondaryEvent = secondaryEventsVisualizer.InstantiateEvent(prefab);
+            RelationshipInteractionSetup prefab = _secondaryEventsVisualizer.RelationshipInteractionPrefab;
+            SecondaryEvent secondaryEvent = _secondaryEventsVisualizer.InstantiateEvent(prefab);
             RelationshipInteractionSetup relationshipInteraction = secondaryEvent as RelationshipInteractionSetup;
 
             relationshipInteraction.SetCharacter(targetCharacter);
             relationshipInteraction.SetTargetValue(targetCharacter.Relationship + amount);
-            secondaryEventsVisualizer.VisualizeInteraction(secondaryEvent);       
+            _secondaryEventsVisualizer.VisualizeInteraction(secondaryEvent);       
 
             _playerStats.ChangeRelationship(targetCharacter, amount);
         }

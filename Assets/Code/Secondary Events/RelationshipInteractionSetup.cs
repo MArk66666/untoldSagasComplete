@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,13 +23,12 @@ public class RelationshipInteractionSetup : SecondaryEvent, IAnimatable
 
         if (_canPlayAnimation)
         {
-            _currentRelationshipValue += _animationSmoothness * Time.deltaTime;
+            _currentRelationshipValue = Mathf.MoveTowards(_currentRelationshipValue, _targetRelationshipValue, _animationSmoothness * Time.deltaTime);
 
             relationshipSlider.value = _currentRelationshipValue;
 
-            if (_currentRelationshipValue >= _targetRelationshipValue)
+            if (_currentRelationshipValue == _targetRelationshipValue)
             {
-                _currentRelationshipValue = _targetRelationshipValue;
                 _canPlayAnimation = false;
             }
         }

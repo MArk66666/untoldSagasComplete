@@ -8,7 +8,6 @@ public interface IBackgroundInteractable
     void SetBackground(Sprite image);
 }
 
-[RequireComponent(typeof(LocalizationManager))]
 [RequireComponent(typeof(TextVisualizer))]
 [RequireComponent(typeof(DialogueCharacterSetup))]
 [RequireComponent(typeof(AudioController))]
@@ -16,8 +15,6 @@ public class SceneComponentsHolder : MonoBehaviour, IBackgroundInteractable
 {
     [SerializeField] private Image background;
     [SerializeField] private Text title;
-
-    [SerializeField] private AudioClip defaultClickSound;
 
     private EventsManager _eventsManager;
     private DialogueCharacterSetup _dialogueManager;
@@ -75,11 +72,12 @@ public class SceneComponentsHolder : MonoBehaviour, IBackgroundInteractable
         _dialogueManager.ToggleDialogueVisibility(currentEvent.Dialogue);
     }
 
-    private string GetLocalizedText(Chapter chapter, int currentEventID)
+    private void SetupEventTitle(Chapter chapter, int currentEventID)
     {
-        string key = "chapter_" + chapter.name + "_event_" + currentEventID + "_title";
-        string localizedText = _eventsManager.LocalizationManager.GetTranslation(key);
-        return localizedText;
+        string key = LocalizationKeysHolder.GetEventTitleKey(chapter, currentEventID);
+        string localizedTitle = LocalizationManager.Localization.GetTranslation(key);
+
+        _textVisualizer.WriteTitle(localizedTitle);
     }
 
     public void SetUpScene(int currentEventID)
@@ -93,12 +91,12 @@ public class SceneComponentsHolder : MonoBehaviour, IBackgroundInteractable
         if (currentEvent.ChangeMusicStyle)
             _audioController.SetMusic(currentEvent.MusicStyle);
 
+        SetupEventTitle(currentChapter, currentEventID);
         _audioController.SetAmbience(currentEvent.Ambience);
-        _textVisualizer.WriteTitle(currentEvent.Title);
     }
 
     public AudioClip GetDefaultClickSound()
     {
-        return defaultClickSound;
+        return _audioController.DefaultClickSound;
     }
 }
