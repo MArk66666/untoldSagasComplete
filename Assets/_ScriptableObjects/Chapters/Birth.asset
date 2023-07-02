@@ -54,6 +54,8 @@ MonoBehaviour:
         RelationshipModifiers:
         - Character: {fileID: 11400000, guid: 14e1dfd64b2cda44eb702aa3072e7139, type: 2}
           Relationship: -5
+        - Character: {fileID: 11400000, guid: c218af3e74cc9484d851c260a7e0a030, type: 2}
+          Relationship: 3
     Dialogue: 0
     DialogueCharacter: {fileID: 0}
     ChangeMusicStyle: 1

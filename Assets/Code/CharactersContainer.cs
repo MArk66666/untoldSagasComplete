@@ -13,4 +13,9 @@ public class CharactersContainer : MonoBehaviour
             character.Relationship = character.InitialRelationship;
         }
     }
+
+    public List<Character> GetAllCharacters()
+    {
+        return characters;
+    }
 }

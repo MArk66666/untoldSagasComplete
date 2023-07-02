@@ -7,6 +7,7 @@ public class SecondaryEventsVisualizer : MonoBehaviour
     [SerializeField] private Transform grid;
     [Header("Setups")]
     [SerializeField] private RelationshipInteractionSetup relationshipInteractionPrefab;
+    [SerializeField] private RelationshipInteractionSetup fullSizeCharacterInteractionPrefab;
     [SerializeField] private CharacteristicInteractionSetup characteristicInteractionPrefab;
 
     private List<Transform> _interactions = new List<Transform>();
@@ -14,6 +15,7 @@ public class SecondaryEventsVisualizer : MonoBehaviour
     private EventsManager _eventsManager;
 
     public RelationshipInteractionSetup RelationshipInteractionPrefab { get => relationshipInteractionPrefab;}
+    public RelationshipInteractionSetup FullSizeCharacterInteractionPrefab { get => fullSizeCharacterInteractionPrefab; }
     public CharacteristicInteractionSetup CharacteristicInteractionPrefab { get => characteristicInteractionPrefab; }
 
     private void Start()

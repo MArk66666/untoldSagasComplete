@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using CustomInspector;
 
 public class RelationshipInteractionSetup : SecondaryEvent, IAnimatable
 {
@@ -8,6 +9,9 @@ public class RelationshipInteractionSetup : SecondaryEvent, IAnimatable
     [SerializeField] private Text characterNameField;
     [SerializeField] private Slider relationshipSlider;
     [SerializeField] private Text sliderValueField;
+
+    [SerializeField] private bool fullSize = false;
+    [SerializeField, ShowIf("fullSize")] private Text characterDescriptionField;
 
     private float _initialRelationshipValue = 0;
     private float _targetRelationshipValue = 0;
@@ -61,6 +65,11 @@ public class RelationshipInteractionSetup : SecondaryEvent, IAnimatable
     {
         characterIcon.sprite = character.Icon;
         characterNameField.text = character.Name;
+
+        if (fullSize && characterDescriptionField != null)
+        {
+            characterDescriptionField.text = character.Description;
+        }
 
         _initialRelationshipValue = character.Relationship;
     }

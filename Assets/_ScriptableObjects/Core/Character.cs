@@ -7,7 +7,10 @@ public class Character : ScriptableObject
 {
     public Sprite Icon;
     public string Name;
+    [TextArea(3, 10)]
+    public string Description;
     public int InitialRelationship;
 
     public int Relationship { get; set; }
+    public bool Familiar { get; set; } 
 }

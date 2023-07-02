@@ -66,6 +66,7 @@ public class SceneComponentsHolder : MonoBehaviour, IBackgroundInteractable
         if (currentEvent.Dialogue)
         {
             Character character = currentEvent.DialogueCharacter;
+            character.Familiar = true;
             _dialogueManager.SetupCharacter(character);
         }
 
