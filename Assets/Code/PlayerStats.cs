@@ -3,7 +3,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(CharacteristicSetup))]
 [RequireComponent(typeof(ItemHandler))]
-[RequireComponent(typeof(CharactersContainer))]
 [RequireComponent(typeof(HeartsVisualizer))]
 public class PlayerStats : MonoBehaviour, IDataPersistence
 {
@@ -15,25 +14,37 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
     private HeartsVisualizer _heartsVisualizer;
 
     public ItemHandler ItemHandler { get; private set; }
-    public CharactersContainer CharactersContainer { get; private set; }
     private void Start()
     {
-        _characteristicSetup = GetComponent<CharacteristicSetup>();
-        ItemHandler = GetComponent<ItemHandler>();
-        CharactersContainer = GetComponent<CharactersContainer>();
-        _heartsVisualizer = GetComponent<HeartsVisualizer>();
-
-        CharactersContainer.ResetCharactersRelationships();
         _heartsVisualizer.UpdateHeartGrid(_heartsAmount);
     }
+
     public void LoadData(GameData data)
     {
+        GetAllComponents();
+
         _heartsAmount = data.HeartsAmount;
+
+        if (data.Characteristics.Count > 0)
+        {
+            _acquiredCharacteristics = data.Characteristics;
+
+            int lastCharacteristicIndex = _acquiredCharacteristics.Count - 1;
+            _characteristicSetup.SetupCharacteristic(_acquiredCharacteristics[lastCharacteristicIndex]);
+        }
     }
 
     public void SaveData(ref GameData data)
     {
         data.HeartsAmount = _heartsAmount;
+        data.Characteristics = _acquiredCharacteristics;
+    }
+
+    private void GetAllComponents()
+    {
+        _characteristicSetup = GetComponent<CharacteristicSetup>();
+        ItemHandler = GetComponent<ItemHandler>();
+        _heartsVisualizer = GetComponent<HeartsVisualizer>();
     }
 
     public void AddCharacteristic(Characteristic characteristic)

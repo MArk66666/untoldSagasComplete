@@ -2,19 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IMusicInteractable
-{
-    void SetMusic(GameEvent.MusicType musicType);
-    AudioClip GetRandomStylyzedClip();
-    void HandleSongChange(AudioClip song);
-}
-
-public interface IAmbienceInteractable
-{
-    void SetAmbience(AudioClip clip);
-}
-
-public class AudioController : MonoBehaviour, IMusicInteractable, IAmbienceInteractable
+public class AudioController : MonoBehaviour
 {
     [SerializeField] private AudioSource musicPlayer;
     [SerializeField] private AudioSource ambiencePlayer;

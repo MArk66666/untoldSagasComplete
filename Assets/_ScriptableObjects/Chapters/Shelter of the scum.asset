@@ -287,7 +287,7 @@ MonoBehaviour:
       RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
-    Dialogue: 1
+    Dialogue: 0
     DialogueCharacter: {fileID: 11400000, guid: ef48e703526c149ab88e6862a36e8dd6, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
       RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
-    Dialogue: 0
+    Dialogue: 1
     DialogueCharacter: {fileID: 11400000, guid: ef48e703526c149ab88e6862a36e8dd6, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
       RemovableItem: {fileID: 0}
       CharactersRelationshipModifier:
         RelationshipModifiers: []
-    Dialogue: 0
+    Dialogue: 1
     DialogueCharacter: {fileID: 11400000, guid: 8b87eddd7e42144e8af5540a1ae9ce55, type: 2}
     ChangeMusicStyle: 0
     MusicStyle: 0

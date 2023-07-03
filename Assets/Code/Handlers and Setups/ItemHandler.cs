@@ -2,10 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemHandler : MonoBehaviour
+public class ItemHandler : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private ItemsVisualizer itemsVisualizer;
     private List<Item> _acquiredItems = new List<Item>();
+
+    public void LoadData(GameData data)
+    {
+        if (data.Items.Count > 0)
+        {
+            _acquiredItems = data.Items;
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.Items = _acquiredItems;
+    }
 
     public void AddItem(Item item)
     {

@@ -30,7 +30,7 @@ public class EventsManager : MonoBehaviour, IDataPersistence
             DataPersistenceManager.FindAllDataPersistenceObjects();
             DataPersistenceManager.LoadGameData();
 
-            DataPersistenceManager.SaveGameData();
+            //DataPersistenceManager.SaveGameData();
         }
     }
 
